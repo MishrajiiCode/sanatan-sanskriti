@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Password</title>
+    <style>
+        /* Button style */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h2>Reset Password</h2>
+    <form id="reset-password-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new-password" required><br><br>
+        <label for="confirm-new-password">Confirm New Password:</label>
+        <input type="password" id="confirm-new-password" name="confirm-new-password" required><br><br>
+        <a href="project1.html" class="button">Reset password</a>
+    </form>
+</body>
+</html>
+
+    <script>
+        function ResetPassword() {
+            // Perform the password reset action (this is a placeholder)
+            // For demonstration purposes, we'll simply alert a message
+            alert("Password reset successful!");
+            // Redirect to the main login page
+            window.location.href = "project1.html"; // Replace "login.html" with the actual path to your main login page
+            // Close the reset password tab
+            window.close();
+        }
+   
+    </script>
+</body>
+</html>

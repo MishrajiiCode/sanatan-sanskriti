@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: orange;
+}
+
+main {
+    display: none;
+    padding: 20px;
+}
+
+aside {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.folder:hover {
+    transform: scale(1.1);
+    background-color: orange;
+    color: white;
+}
+
+.search-container {
+    position: absolute;
+    right: 0;
+    top: 40px; /* Adjust the -10px as needed */
+}
+
+#searchInput {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; /* Adjust the width as needed */
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add this CSS to your styles.css file */
+.folder:hover {
+    background-color: orange;
+    color: white;
+}
+.cylindrical-folder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust the width as needed */
+    height: 60px; /* Height of the cylinder */
+    border-radius: 30px; /* Half of the height for the cylindrical shape */
+    background-color: orange; /* Folder background color */
+    color: #333; /* Folder text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    margin-bottom: 20px; /* Add margin-bottom to create space */
+}
+
+.cylindrical-folder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent; /* Half of the width for the left side */
+    border-right: 30px solid transparent; /* Half of the width for the right side */
+    border-bottom: 60px solid #f0f0f0; /* Height of the cylinder */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.cylindrical-folder:hover {
+    background-color: orange; /* Folder background color on hover */
+    transform: scale(1.1); /* Scale up on hover for effect */
+}
+
+/*.aarti-list {*/
+   
+    
+    .folder-container.folder-background {
+        background-image: url('path_to_your_image.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white; /* Adjust text color for better visibility */
+    }
+    
+    body.aarti-background {
+        background-image: url('https://c1.wallpaperflare.com/preview/77/255/802/wood-ivy-green-leaves.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white; /* Adjust text color for better visibility */
+    }
+    .aarti-list {
+        color: yellow;
+        font-weight: bold;
+        font-size: 1.2em; /* You can adjust the size as needed */
+    }
+    .folder img {
+        width: 150px; /* Set the width of the image */
+        height: 150px; /* Set the height of the image */
+        margin-bottom: 5px; /* Add some margin between the image and text */
+    }
+    
+    header {
+        position: relative;
+        padding: 20px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+    }
+    
+    .logo {
+        position: absolute;
+        left: 20px; /* Adjust the left position as needed */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px; /* Set the width of the logo */
+        height: 70px; /* Set the height of the logo */
+        animation: spin 2s linearinfinite;/*Apply the spin animation*/
+        box-shadow: 0px 4px 8px rgba(255, 165, 0, 2.0); /* Add a 3D shadow effect with orange color */
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg); /* Start with no rotation */
+        }
+        100% {
+            transform: rotate(360deg); /* Rotate 360 degrees */
+        }
+    }
+    
+    h1 {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .folder {
+        cursor: pointer;
+        color: blue;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    body {
+        background-image: url('https://c1.wallpaperflare.com/preview/77/255/802/wood-ivy-green-leaves.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .folder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        transition: transform 0.3s;
+        margin-bottom: 10px; /* Add margin-bottom to create space */
+    }
+    #Mantra-list li {
+        color: yellow;
+        font-weight: bold;
+        font-size: 1.2em; /* You can adjust the size as needed */
+    }
+    h2.login-heading {
+        color: white; /* Change to your desired text color */
+    }
+
+    
+    #login-container button[type="button"] {
+        /* Your existing styles */
+        margin-bottom: -10px; /* Add 10px of space below the "Login" button */
+    }
+
+    #login-container button[type="button"]:last-child {
+        /* Your existing styles */
+        margin-bottom: -20px; /* Add 10px of space below the "Forgot Password" button */
+    }
+    #login-container label {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    #login-container input {
+        padding-left: 20px; /* Adjust as needed to make space for the icon */
+    }
+
+    #login-container .fa {
+        position: absolute;
+        left: 5px; /* Adjust to position the icon */
+        top: 50%; /* Center the icon vertically */
+        transform: translateY(-50%);
+    }
+    #login-container input[type="checkbox"] {
+        transform: scale(1.5); /* Adjust the scale factor as needed */
+        margin-right: 5px; /* Add some space between the checkbox and the label text */
+    }
+  /* Form container styles */
+  #login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /*background-color: orange;*/
+    box-shadow: 0 2px 4px #ccc;
+}
+
+/* Form title styles */
+#login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Label styles */
+#login-container label {
+    display: block;
+    margin-bottom: 4px;
+    color: black;
+}
+
+/* Input styles */
+#login-container input[type="email"],
+#login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Button styles */
+#login-container button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+#login-container button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot password link styles */
+#login-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+
+/* Social media icons container styles */
+.icons {
+    display: flex;
+    justify-content: space-around; /* Equal space between icons */
+    margin-top: 10px;
+}
+
+/* Social media icon styles */
+.icons a {
+    color: #333333;
+    font-size: 50px;
+    text-decoration: none;
+    margin:  5px; /* Equal space around icons */
+    padding: 10px; /* Padding to adjust space */
+    background-color: antiquewhite;
+    border-radius: 100%; /* Make the element round (circle) */
+    display: inline-flex; /* Use inline-flex to center the icon vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Set the width and height of the circle */
+    height: 20px;
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+/* Hover effect */
+.icons a:hover {
+    transform: scale(1.2); /* Grow the icon size on hover */
+}
+/* Style for the folder header */
+.sundar-kaand-header {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Style for the list items */
+.sundar-kaand-list {
+    display: none;
+    padding-left: 20px;
+}
+
+/* Style for the active folder */
+.sundar-kaand-header.active + .sundar-kaand-list {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
